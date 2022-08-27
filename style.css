@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&subset=latin-ext');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*NAWIGACJA*/
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+nav.black {
+	background: rgba(0,0,0,.8);
+	height: 80px;
+	padding: 10px 50px;
+	z-index: 2;
+}
+nav .logo {
+	float: left;
+}
+nav .logo img {
+	height: 80px;
+	transition: .5s;
+}
+nav.black .logo img {
+	height: 60px;
+}
+nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	line-height: 80px;
+	color: #fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+}
+nav.black ul li a {
+	color: #fff;
+	line-height: 60px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+	color: #fff;
+	background: #f00;
+}
+section.sec1 {
+	width: 100%;
+	height: 100vh;
+	background: url("images/head.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+}
+section.sec1 h1 {
+	margin: 0;
+	padding-top: 300px;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+	font-family: 'Playfair Display SC', serif;
+	text-shadow: 1px 1px #000;
+}
+section.sec1 p {
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.arrow {
+	position: relative;
+	font-size: 78px;
+	text-align: center;
+	color: #fff;
+	animation: bouncearrow 1s infinite;
+	padding: 280px;
+	z-index: 1;
+}
+
+/*OFERTA*/
+.oferta {
+	padding: 80px 0 80px 0;
+	text-align: center;
+}
+.oferta h1 {
+	font-size: 34px;
+}
+.oferta p {
+	font-size: 24px;
+}
+
+/*OFERTY*/
+.oferty {
+	text-align: center;
+	height: 200px;
+	margin-bottom: 80px;
+}
+.oferty i {
+	font-size: 120px;
+}
+.szkolenia:hover {
+	color: #f00;
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.kursy:hover {
+	color: #f00;
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.warsztaty:hover {
+	color: #f00;
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.contact {
+	background-color: #bec1c6;
+	min-height: 200px;
+	margin-bottom: 100px;
+}
+.contact .flex-container {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 200px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.contact .heading {
+	font-size: 2em;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px;
+}
+.contact .heading span {
+	font-weight: bold;
+}
+.contact button {
+	display: inline-block;
+	color: #fff;
+	background-color: inherit;
+	border: 2px solid #fff;
+	padding: 18px 60px;
+	background-image: -webkit-linear-gradient(45deg, #fff 50%, transparent 50%);
+	background-image: -o-linear-gradient(45deg, #fff 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #fff 50%, transparent 50%);
+	background-position: 100% 0;
+	background-size: 300%;
+	border-radius: 30px;
+	font-size: 0.938em;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-transition: .5s ease-out;
+	-o-transition: .5 ease-out;
+	transition: .5s ease-out;
+	margin: 20px auto;
+}
+.contact .center {
+	text-align: center;
+	margin: -30px;
+}
+.contact button:hover {
+	background-position: 0 100%;
+	color: #000;
+}
+/*WYNAJEM*/
+.w-tresc {
+	text-align: center;
+	font-size: 20px;
+}
+	.w-tresc p {
+		padding-top: 60px;
+		margin: 50px;
+	}
+.w_title {
+	padding-bottom: 50px;
+}
+.galeria {
+	text-align: center;
+}
+.galeria h1 {
+	font-size: 32px;
+}
+.images {
+	margin: 10px 50px;
+}
+.images img {
+	width: 420px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.images img:hover {
+	filter: grayscale(0);
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.img-circle {
+    border-radius: 50%;
+}
+.local {
+	text-align: center;
+	padding: 20px;
+}
+.img_m {
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.img_m img {
+	height: 160px;
+}
+.img_m:hover {
+	filter: grayscale(0);
+	transition: 1s;
+}
+.img_news {
+	font-size: 30px;
+}
+.button {
+	width: 300px;
+	height: 80px;
+	background-color: #f00;
+	border-radius: 5px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.button h1 {
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 80px;
+	margin: 50px;
+}
+#map {
+	height: 500px;
+	width: 100%;
+	margin: 50px 0 0 0;
+}
+
+.adress {
+	text-align: center;
+}
+.lower-footer {
+	background: rgba(0,0,0,.8);
+	height: 94px;
+}
+.lower-footer a {
+	text-decoration: none;
+	color: #fff;
+}
+.lower-footer p {
+	line-height: 94px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+@keyframes bouncearrow {
+	0%{top: 0px;}
+	50%{top: 20px;}
+	100%{top: 0px;}
+
+}
+.responsive-bar {
+	display: none;
+}
+@media (max-width: 768px) {
+	.responsive-bar {
+		display: block;
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		top: 0;
+		padding: 5px 20px;
+		box-sizing: border-box;
+		z-index: 3;
+	}
+	.responsive-bar .logo img {
+		float: left;
+		height: 50px;
+
+	}
+	.responsive-bar .menu h4 {
+		float: right;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+		line-height: 50px;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+	nav,
+	nav.black {
+		background: #262626;
+		height: 60px;
+		padding: 0;
+	}
+	nav .logo {
+		display: none;
+	}
+	nav ul {
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		background: #262626;
+		float: none;
+		display: none;
+	}
+	nav ul.active {
+		display: block;
+	}
+	nav ul li {
+		width: 100%;
+	}
+	nav ul li a {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 30px !important;
+		color: #fff;
+	}
+	section.sec1 {
+		background: none;
+		background-color: #262626;
+		height: 250px;
+	}
+	section.sec1 h1 {
+	padding-top: 80px;
+	text-shadow: 2px 2px #000;
+	font-size: 80px;
+	}
+	section.sec1 .arrow {
+		display: none;
+	}
+	section.sec1 p {
+		display: none;
+	}
+	.images img {
+	width: 280px;
+	}
+	.w-tresc {
+	text-align: center;
+	font-size: 16px;
+}
+	.w-tresc p {
+		padding: 10px;
+		margin: 5px;
+	}
+	.w_title h1 {
+		font-size: 30px;
+	}
+	.oferta {
+	padding: 10px;
+	text-align: center;
+	}
+	.oferta h1 {
+		font-size: 24px;
+	}
+	.oferta p {
+		font-size: 18px;
+	}
+	.oferty i {
+		font-size: 80px;
+	}
+	.kursy:hover {
+		transform: none;
+		transition: none;
+	}
+	.szkolenia:hover {
+		transform: none;
+		transition: none;
+	}
+	.warsztaty:hover {
+		transform: none;
+		transition: none;
+	}
+	.footer {
+		display: none;
+	}
+	.contact .heading {
+		font-size: 1.5em;
+		color: #000;
+	}
+	.oferty {
+		display: none;
+	}
+}

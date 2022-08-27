@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+		<title>Marta Handzel</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="grid.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+		<script src="https://wchat.freshchat.com/js/widget.js"></script>
+		<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav').addClass('black');
+				}
+				else
+				{
+					$('nav').removeClass('black')
+				}
+			})
+			$(document).ready(function(){
+				$(".menu h4").click(function(){
+					$("nav ul").toggleClass("active")
+				})
+			})
+		</script>
+		<script>
+		  window.fcWidget.init({
+		    token: "517e4a7c-5557-4fa9-9992-0a7ea02b09ac",
+		    host: "https://wchat.freshchat.com"
+		  });
+		</script>
+	</head>
+	<body>
+		<div class="responsive-bar">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="menu">
+				<h4>Menu</h4>
+			</div>
+		</div>
+		<nav>
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<ul>
+				<li><a href="#start" class="active">Start</a></li>
+				<li><a href="#oferta">Oferta</a></li>
+				<li><a href="#wynajem">Wynajem sali</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			</ul>
+		</nav>
+		<section class="sec1" id="start">
+			<h1>Perfect</h1>
+			<p>Twoje życie staje się lepsze tylko, kiedy Ty stajesz się lepszym.</p>
+			<div class="arrow col-12">&#8681;</div>
+		</section>
+		<!--OFERTA-->
+		<section class="oferta container" id="oferta">
+			<div class="start">
+				<h1>Oferta</h1>
+				<p>Każdego Klienta traktujemy indywidualnie i każdemu staramy się przekazać maksimum wiedzy oraz nauczyć praktycznych umiejętności potrzebnych w życiu zawodowym ale i prywatnym. Organizujemy szkolenia na najwyższym poziomie. Dobieramy najlepszych trenerów do realizacji powierzonych nam zadań. Gwarancja realizacji szkolenia – Nie odwołujemy szkoleń!</p>
+			</div>
+		</section>
+		<!--/OFERTA-->
+		<!--OFERTY-->
+		<section class="oferty container">
+			<div class="szkolenia col-4 col-m-6">
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				<h1>Materiały dla kursantów</h1>
+			</div>
+			<div class="kursy col-4 col-m-6">
+				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+				<h1>Kursy, Szkolenia i Warsztaty</h1>
+			</div>
+			<div class="warsztaty col-4 col-m-6">
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<h1>Tłumaczenia</h1>
+			</div>
+		</section>
+		<!--/OFERTY-->
+		<!--WYNAJEM-->
+		<section class="contact" id="become-part">
+			<div class="container flex-container">
+				<h1 class="heading">Masz pytania w sprawie <span>szkoleń</span>? Skontaktuj się z nami – chętnie poznamy Twoje oczekiwania i zaproponujemy korzystne rozwiązanie.</h1>
+				<div class="center">
+					<button>NAPISZ DO NAS</button>
+				</div>
+			</div>
+		</section>
+		<section class="galeria" id="wynajem">
+			<div class="images">
+				<div class="image1 container">
+					<a href="images/image1.jpeg" data-lightbox="mygallery" data-title="Perfect - wynajem"><img src="images/image1.jpeg"></a>
+					<a href="images/image2.jpeg" data-lightbox="mygallery"><img src="images/image2.jpeg"></a>
+					<a href="images/image3.jpeg" data-lightbox="mygallery"><img src="images/image3.jpeg"></a>
+					<a href="images/image4.jpeg" data-lightbox="mygallery"><img src="images/image4.jpeg"></a>
+					<a href="images/image4.jpeg" data-lightbox="mygallery"><img src="images/image4.jpeg"></a>
+					<a href="images/image1.jpeg" data-lightbox="mygallery" data-title="Perfect - wynajem"><img src="images/image1.jpeg"></a>
+					<a href="images/image2.jpeg" data-lightbox="mygallery"><img src="images/image2.jpeg"></a>
+					<a href="images/image1.jpeg" data-lightbox="mygallery" data-title="Perfect - wynajem"><img src="images/image1.jpeg"></a>
+				</div>
+			</div>
+		</section>
+		<section class="local container">
+			<div class="img_news">
+				<p>Nasza oferta nie składa się jedynie z szkoleń, warsztatów czy kursów. W skład wchodzi również wynajem 20-osobowej sali wraz z potrzebnym sprzętem takim jak projektor, laptop czy nagłośnienie.</p>
+			</div>
+		</section>
+		<section class="adress container" id="kontakt">
+			<hr width="300px">
+			<h3>Dworcowa 5/2B</h3>
+			<h3>64-410 Sieraków</h3>
+			<p>handzel.marta@gmail.com</p>
+			<p>665 759 112</p>
+			<hr width="300px">
+		</section>
+		<section class="mapa">
+			<div id="map"></div>
+		</section>
+		<footer class="lower-footer">
+		<p>Copyright © 2018 <span>Made by <a target="_blank" href="https://github.com/savespace" >Krzysztof Zielonka</a></span></p>
+		</footer>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXLJQPd0vjcaKx-tV5VCHjXz6awW2GkvE&callback=initMap"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>
